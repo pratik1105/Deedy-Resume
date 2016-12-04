@@ -1,0 +1,261 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Pratik}{Mishra}{ \urlstyle{same}\url{https://pratik1105.github.io} \\
+\href{mailto:pmishra@iitk.ac.in}{pmishra@iitk.ac.in} | +91-8960619723
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{IIT KANPUR}
+\descript{BS in Mathematics and \\ Scientific Computing}
+\location{Expected May 2018 | Kanpur, India \\ Cum. CPI: 8.8}
+\sectionsep
+
+
+%\descript{BS in Computer Science}
+%\location{Expected May 2014 | Ithaca, NY}
+%Conc. in Software Engineering \\
+%College of Engineering \\
+%Dean's List (All Semesters) \\
+%\location{ Cum. GPA: 3.92 / 4.0 \\
+%Major GPA: 3.94 / 4.0}
+%\sectionsep
+
+\subsection{Delhi Public School\\ Ranchi}
+\location{Grad. May 2014 |  Ranchi, India}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+%\subsection{Graduate}
+%Advanced Machine Learning \\
+%Open Source Software Engineering \\
+%Advanced Interactive Graphics \\
+%Compilers + Practicum \\
+%Cloud Computing \\
+%\sectionsep
+
+\subsection{Undergraduate}
+Linear Algebra \\
+Abstract Algebra \\
+Probability and Statistics \\
+Data Structures and Algorithms \\
+Natural Language Processing \\
+Optimization Techniques \\
+Databases (ongoing) \\
+Bayesian Machine Learning (ongoing) \\
+
+%{\footnotesize \textit{\textbf{(Research Asst. \& Teaching Asst) }}} \\
+%Unix Tools and Scripting \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Comfortable:}
+C \textbullet{}   C++ \textbullet{} Python \textbullet{} HTML \textbullet{} CSS \\ 
+%\location{Over 1000 lines:}
+%C \textbullet{} C++ \textbullet{} CSS \textbullet{} PHP \textbullet{} Assembly \\
+\location{Familiar:}
+Git \textbullet{} Pandas \textbullet{} Matplotlib \textbullet{} Scikit-learn
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/pratik1105}{\custombold{pratik1105}} \\
+LinkedIn://  \href{https://www.linkedin.com/in/pratik1105}{\custombold{pratik1105}} \\
+Facebook://  \href{https://www.facebook.com/pratik.mishra.9}{\custombold{pratik.mishra.9}} \\
+Twitter://  \href{https://twitter.com/pratikmishra001}{\custombold{@pratikmishra001}} \\
+Quora://  \href{https://www.quora.com/profile/Pratik-Mishra-8}{\custombold{Pratik-Mishra-8}}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+
+\runsubsection{Optical Character Recognition}
+\descript{| Programming Club }
+\location{Feb 2016 – Apr 2016 | IIT Kanpur}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}\item Implemented Convolutional Neural Network and Softmax regression using TensorFlow(Google library for Machine Learning) for classification of digits using the MNIST dataset.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Fraud Prediction in Enron Dataset}
+\descript{| CS 671}
+\location{Jul 2016 – Nov 2016 | IIT Kanpur | Professor Harish Karnick |  \href{https://github.com/pratik1105/CS-671}{github link}}
+\begin{tightemize}
+\item Employed NLP techniques to find Indicators of fraudulent behavior in Enron Emails dataset \item Implemented topic modelling using LDA analysis to make predictions\end{tightemize}
+\sectionsep
+
+\runsubsection{Combinatorial Optimization}
+\descript{| CS 774}
+\location{Jul 2016 – Nov 2016 | IIT Kanpur | Professor Purushottam Kar |  \href{https://github.com/pratik1105/CS-774}{github link}}
+\begin{tightemize}
+\item Completed a reading project on problems of combinatorial optimization under the course Optimization Techniques\item Compiled applications and heuristic solutions to the Travelling Salesman Problem and Min-Max flow problem\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Competitive Programming}
+%\runsubsection{Cornell Robot Learning Lab}
+%\descript{| Head Undergrad Research}
+%\location{Jan 2014 – Present | Ithaca, NY}
+%Worked with \textbf{\href{http://www.cs.cornell.edu/~ashesh/}{Ashesh Jain}} and %\textbf{\href{http://www.cs.cornell.edu/~asaxena/}{Prof Ashutosh Saxena}} to create %\textbf{PlanIt}, a tool which  learns from large scale user preference feedback to %plan robot trajectories in human environments.  Publication submitted.
+%\sectionsep
+
+%\runsubsection{Cornell Phonetics Lab}
+%\descript{| Head Undergraduate Researcher}
+%\location{Mar 2012 – May 2013 | Ithaca, NY}
+%Lead the development of \textbf{QuickTongue}, the first ever breakthrough %tongue-controlled game with \textbf{\href{http://conf.ling.cornell.edu/~tilsen/}{Prof %Sam Tilsen}} to aid in Linguistics research. Publication submitted.
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COMPETITIVE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Competitive Programming} 
+\begin{tabular}{rll}
+2016	     & \custombold{ACM ICPC}  & \custombold{28th} overall and \custombold{3rd} in IIT Kanpur in Regional Qualifiers\\
+
+2016	     & \href{https://www.codechef.com/users/piedpiper}{Codechef profile}   & Long contest world ranking of \custombold{872}\\
+2016	     & \href{http://codeforces.com/profile/sarcastic_bhokal}{Codeforces profile}  & Maximum level reached : \custombold{BLUE} \\
+2016	     & Kaggle  & Completed 2 playground competitions\\
+\end{tabular}
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    Research interests
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Research Interest}
+%\begin{tabular}{rll}
+\textbullet{}  Data Visualization \\
+\textbullet{}  Machine Learning \\
+\textbullet{}  Algorithms \\
+\textbullet{}  Discrete Mathematics \\
+%\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     ACHIEVEMENTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Achievements} 
+
+\begin{tabular}{rll}
+2012 	& National    & Indian National Mathematics Olympiad \custombold{(INMO)} Finalist\\
+2011   & National   & Indian National Mathematics Olympiad \custombold{(INMO)} Finalist
+\\
+2010   &  National  & AIR \custombold{8} in DPS Science and Maths Competition\\
+2009   &  National   & AIR \custombold{44} in Fiitjee Talent Reward Examination(FTRE) \\
+\end{tabular}
+\sectionsep
+
+\section{Extra Curricular}
+%\begin{tabular}{rll}
+\textbullet{}  Maintain a personal blog  \href{https://pratik1105.github.io/blog/}{(LINK)} \\
+\textbullet{}  Play Basketball, Football, Cricket, Table Tennis, Badminton \\
+\textbullet{}  Avid reader of Fiction Novels
+%\end{tabular}
+\sectionsep
+
+\end{minipage} 
+\end{document}
